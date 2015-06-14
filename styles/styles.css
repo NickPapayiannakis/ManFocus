@@ -1,0 +1,115 @@
+/****************
+*
+* GLOBAL RESET
+*
+*****************/
+
+#siteContainer, #timer, a, body, div, em, footer, h1, h2, h3, header, img, p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* {
+    outline: 1px solid red;
+}
+
+/****************
+*
+* TYPOGRAPHY
+*
+*****************/
+
+@font-face {
+	font-family:'extravaganzza';
+	src: url('../assets/extravaganzza.ttf');
+}
+body {
+	font-family: Roboto-Light, Helvetica, serif;
+	-webkit-font-smoothing: antialiased;
+ 	-moz-osx-font-smoothing: grayscale;
+  	text-rendering: optimizeLegibility;
+    font-family: extravaganzza;
+    background-image: url("../assets/bgwood.jpg");
+}
+p {
+  line-height: 24px;
+  margin-bottom: 0.2em;
+  word-break: break-word;
+}
+
+/****************
+*
+* BODY
+*
+*****************/
+
+@media screen and (min-width: 300px){
+    #siteContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
+    #center {
+        position: absolute;
+        width: 300px;
+        height: 200px;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: 20px;
+        box-shadow: 2px 2px 10px #000;
+        cursor: pointer;
+        transition: box-shadow 0.2s ease-out;
+    }
+    #center:hover {
+        box-shadow: 1px 1px 10px #aaa;
+        text-shadow: -1px -1px 15px #aaa;
+    }
+    #timer {
+        position: absolute;
+        width: auto;
+        height: 80px;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+    .noshadow {
+        box-shadow: none;
+    }
+    a {
+        color: #ccc;
+        text-decoration: none;
+    }
+    h2 {
+        font-size: 70px;
+        color:  rgba(0,0,0,0.5 );
+        text-align: center;
+
+    }
+    h3 {
+        font-size: 11px;
+        position: absolute;
+        right: 30px;
+        bottom: 15px;
+        color: #888;
+    }
+}
+
+@media screen and (min-width: 600px){
+
+    #center {
+        position: absolute;
+        width: 329px;
+        height: 156px;
+    }
+    h1 {
+        font-size: 27px;
+        padding: 7px;
+    }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Man-Focus: The Manly Pomodoro Timer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head> 
+<body>
+
+    <div id="siteContainer">
+
+        <div id="center" onclick="clickIt()">
+
+            <div id="timer">
+
+                <h2 id="time">0:00</h2>
+                <audio id="bell" src="bell.wav"></audio>
+           
+            </div>
+
+        </div>
+
+        <h3 id="credit">A weekend project, by <a href="http://www.nickpapayiannakis.com" target="_blank">Nick Papayiannakis</a></h3>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript">
+
+
+var time = 5;
+var cycle = "long";
+var tracker = 0;
+
+//Timer countdown function
+function countdown(){
+    var seconds = ("00" + (time % 60)).slice(-2);
+    $("#time").text(Math.floor(time/60) + ":" + seconds);
+    
+    if (time > 0){
+    time--;
+    setTimeout(countdown, 1000);
+    } 
+}
+
+setTimeout(countdown, 1000);
+
+window.onLoad = function() {clickIt();};
+
+function clickIt(){
+    document.getElementById("center").style["box-shadow"] = "none"; 
+    setTimeout(document.getElementById('bob').style.cssText = 'background:#ffffff; color: #000000;', 100);
+}
+</script>
+</html>
