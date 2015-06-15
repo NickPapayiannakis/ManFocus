@@ -25,12 +25,15 @@
 	font-family:'extravaganzza';
 	src: url('../assets/extravaganzza.ttf');
 }
+@font-face {
+    font-family:'ProximaNova-Regular';
+    src: url('../assets/ProximaNova-Regular.ttf');
+}
 body {
-	font-family: Roboto-Light, Helvetica, serif;
+	font-family: extravaganzza;
 	-webkit-font-smoothing: antialiased;
  	-moz-osx-font-smoothing: grayscale;
   	text-rendering: optimizeLegibility;
-    font-family: extravaganzza;
     background-image: url("../assets/bgwood.jpg");
 }
 p {

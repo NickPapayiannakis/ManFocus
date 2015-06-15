@@ -1,0 +1,26 @@
+Needs & Constraints:
+
+DONE 1. Needs to countdown from 25 minutes work
+DONE 2. Must count down from 5 minutes break
+DONE 3. Must repeat cycle 4 times
+DONE 4. 5th cycle must countdown 25 minutes break
+DONE 6. Must play sound when countdown finishes
+7. Must pause/play on clicking the timer
+DONE 8. Must display minutes and seconds
+9. Must have a title that shows countdown
+DONE 10. Must mention authors name
+
+PSEUDO CODE
+
+//7. Play/ Pause when div is clicked
+when #center is clicked
+    pause the countdown
+when center is clicked again
+    continue the countdown
+
+PAUSE/ PLAY
+
+DONE 1. Cursor changes to a hand over div
+DONE 2. Perform css transform to div on clicking it to simulate button
+3. On first click, pause the timer and display PAUSED below numbers.
+4. On second click, resume the timer
